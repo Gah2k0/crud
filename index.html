@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD +prati</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Central de Alunos</h1>
+    </header>
+
+    <main>
+      <form method="post">
+        <input type="text" id="nome" name="nome" class="inputs" placeholder="Nome">
+        <input type="email" id="email" name="email" class="inputs" placeholder="Email">
+        <input type="tel" id="telefone" name="telefone" class="inputs" placeholder="Telefone">
+        <input type="date" id="dataNascimento" name="dataNascimento" class="inputs" placeholder="Data de Nascimento">
+        <input type="number" id="notaFinal" name="notaFinal" class="inputs" placeholder="Nota Final" min=0 max=10>
+        <input type="submit" value="Criar" id="aceita" onclick="return addToTable()">
+      </form>
+    </main>
+
+    <table id="myTable">
+        <tr id="0">
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Data de Nascimento</th>
+            <th>Nota Final</th>
+            <th>Ação</th>
+        </tr>
+    </table>
+
+
+</body>
+</html>

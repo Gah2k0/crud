@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'montserrat';
+    src: url('../font/montserrat/Montserrat-Medium.ttf');
+}
+@font-face {
+    font-family: 'amatic';
+    src: url('../font/amatic/AmaticSC-Regular.ttf');
+}
+
+
+body {
+    font-family: montserrat;
+    font-size: 18px;
+    background-image: url(../img/white-g81044400b_1280.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0 ;
+}
+
+header {
+    width: 100vw;
+    height: 12vh;
+    background-color: rgb(54, 194, 204);
+    text-align: center;
+    color: whitesmoke;
+}
+
+header h1 {
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+main {
+    padding: 4rem 0.5rem;
+    /* height: 10vh; */
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 5px rgb(116, 124, 124);
+    border-radius: 1rem;
+}
+
+
+form {
+    text-align: center;
+    width: 90vw;
+    display: flex;
+    gap: 3rem;
+    margin: 0 auto;
+}
+
+.inputs {
+    width: 20vw;
+    padding: 4px 10px;
+    box-sizing: border-box;
+    border: 1px solid rgb(54, 194, 204);
+    border-radius: 1rem;
+    margin: 0 auto;
+  }
+
+.inputs:hover {
+    transition: 0.5s all;
+    transform:scale(1.1);
+}
+
+#aceita {
+    padding: 1rem 6rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    background-color: chartreuse;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* table */
+
+#myTable {
+    font-family: montserrat;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5vh;
+    border-collapse: collapse;
+}
+
+#myTable th {
+    background-color: rgb(54, 194, 204);
+    padding: 20px;
+    color: whitesmoke;
+    border-right: 1px whitesmoke solid;
+}
+
+#myTable td, th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#myTable td{
+    padding: 5px;
+}
+
+#myTable tr:nth-child(even) {
+    background-color: rgb(242, 242, 242);
+}
+
+#myTable tr:nth-child(odd) {
+    background-color: rgb(236, 236, 236);
+}
+
+#myTable tr:hover {
+    background-color: #ddd;
+}
+
+.remove-btn {
+    background-color: transparent;
+    width: 100%;
+    padding: 1rem 3rem;
+    color: red;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
